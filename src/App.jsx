@@ -3,18 +3,14 @@ import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
+// () => {}
+// component = HTML + CSS + JS
+const MyComponent = () => {
+  return <div className="">Trang xinh yêu love you</div>;
+};
+
 const App = () => {
   const [count, setCount] = useState(0);
-
-  /** Expression function */
-  // function myFunction() {
-  //   console.log(">>> Hello world!");
-  // }
-  // myFunction();
-
-  /** Arrow function
-   * () => {}
-   */
   const myFunction = () => {
     console.log(">>> Hello world 2");
   };
@@ -31,6 +27,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello Trang Xinh Yêu 💕</h1>
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
