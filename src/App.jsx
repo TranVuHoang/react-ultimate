@@ -3,8 +3,22 @@ import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
+
+  /** Expression function */
+  // function myFunction() {
+  //   console.log(">>> Hello world!");
+  // }
+  // myFunction();
+
+  /** Arrow function
+   * () => {}
+   */
+  const myFunction = () => {
+    console.log(">>> Hello world 2");
+  };
+  myFunction();
 
   return (
     <>
@@ -16,7 +30,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello Trang Trang</h1>
+      <h1>Hello Trang Xinh Yêu 💕</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -30,6 +44,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
 export default App;
