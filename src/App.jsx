@@ -10,10 +10,19 @@ const App = () => {
     address: "Hà Nội",
     country: "Việt Nam",
   };
+
+  const addNewTodo = (name) => {
+    alert(`Call me ${name}`);
+  };
+  // addNewTodo();
+
   return (
     <div className="todo-container">
       <h1 className="todo-title">Todo list</h1>
-      <TodoNew />
+      {/* component TodoNew */}
+      <TodoNew addNewTodo={addNewTodo} />
+
+      {/* component TodoData */}
       <TodoData
         name={username}
         age={age}
